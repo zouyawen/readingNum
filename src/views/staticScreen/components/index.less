@@ -1,0 +1,100 @@
+.sendCodeContainer {
+  height: 268px;
+}
+
+.useCodeChangeLineContainer {
+  position: relative;
+  height: 272px;
+  .tip {
+    position: absolute;
+    left: 0;
+    top: 10px;
+    width: 100%;
+    text-align: center;
+    font-size: 16px;
+    color: #000;
+  }
+}
+
+.useCodeChangeContainer {
+  height: 188px;
+  display: flex;
+  .tabLeft {
+    flex: 0 0 40px;
+    margin-right: 10px;
+    padding-top: 54px;
+    .icon {
+      width: 40px;
+      height: 40px;
+      margin-bottom: 15px;
+      text-align: center;
+      line-height: 40px;
+      background: url('~assets/images/block_bg.png') no-repeat;
+    }
+  }
+  .tableRight {
+    flex: 1;
+    table {
+      width: 100%;
+      font-weight: bold;
+      font-size: 15px;
+      color: #333;
+      th {
+        height: 54px;
+        text-align: center;
+      }
+      tbody {
+        tr {
+          &:nth-child(2n) {
+            td {
+              height: 15px; 
+            }
+          }
+          &:nth-child(2n-1) {
+            td {
+              background-color: #F3F3F4;
+              height: 40px;
+            }
+          }
+        }
+      }
+      td {
+        text-align: center;
+      }
+    }
+  }
+}
+
+.useCodeChangeMapContainer {
+  position: relative;
+  height: 552px;
+  .popContainer {
+    position: absolute;
+    top: 55px;
+    right: 11px;
+    height: 138px;
+    width: 226px;
+    padding: 24px 37px;
+    color: #fff;
+    background: url('~assets/images/popup_bg.png') no-repeat;
+    .popContent {
+      .city {
+        padding-top: 20px;
+        font-weight: bold;
+        font-size: 18px;
+        margin-bottom: 18px;
+      }
+      .row {
+        display: flex;
+        line-height: 18px;
+        font-size: 14px;
+        .label {
+          flex: 0 0 118px;
+        }
+        .value {
+          flex: 1;
+        }
+      }
+    }
+  }
+}

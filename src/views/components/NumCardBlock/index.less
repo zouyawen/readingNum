@@ -1,0 +1,25 @@
+.numCardBlockContainer {
+  display: flex;
+  flex-wrap: wrap;
+  .card {
+    flex: 1 1 calc(50% - 20px);
+    height: 100px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    background-size: 100% 100%;
+    color: #fff;
+    text-align: center;
+    &:nth-child(2n) {
+      margin-right: 0;
+    }
+    .label {
+      padding-top: 25px;
+      font-size: 16px;
+      font-weight: bold;
+    }
+    .value {
+      font-size: 20px;
+      font-weight: bold;
+    }
+  }
+}
